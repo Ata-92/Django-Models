@@ -13,3 +13,6 @@ class Product(models.Model):
     in_stock = models.BooleanField(default=True)
     createdDate = models.DateField(auto_now_add=True)
     updatedDate = models.DateField(auto_now=True)
+
+    def __str__(self):
+        return self.name
